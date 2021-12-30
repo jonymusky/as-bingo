@@ -16,7 +16,7 @@ app.post('/generate', async function(req, res) {
     let y = 0;
     for(let i = 0; i < 25; i++){
         if(i !== 12){
-            image.print(font, 190 + x*230, 530 + y*230 , `${req.body.text[i] || ''}!`, 150);
+            image.print(font, 190 + x*230, 530 + y*230 , `${req.body.text[i] || ''}`, 150);
         }
         x++;
         if(x === 5){
