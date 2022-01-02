@@ -13,17 +13,21 @@
   <body>
     
     <div class="container">
+        <div>
         <h1>AS, Bingo!</h1>
+        <hr/>
+        </div>
         <form name="form" method="POST"  action="/generate" >
             <div class="form-group">
               <label for="exampleInputEmail1">Full Name</label>
               <input type="text" class="form-control" placeholder="Full Name" name="name">
             </div>
             <div class="form-group">
+                <label>Design</label>
                 <div class="dropdown">
                     <select name="design">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
+                        <option value="1">1. Light</option>
+                        <option value="2">2. Dark</option>
                     </select>
                 </div>
             </div>
